@@ -58,3 +58,22 @@ body{font-family:"Helvetica Neue",Arial,sans-serif;letter-spacing:-.025em}
 .clubCommunityPerks{border-left:1px solid #52565a;align-self:center;padding:12px 20px;display:grid;gap:13px;font-size:12px}
 @media(max-width:950px){.hero{grid-template-columns:1fr}.heroText{padding:45px 5vw}.hero h1{white-space:normal;font-size:clamp(42px,8vw,70px)}.heroVisual{min-height:470px}.jakeQuote{right:5vw}.clubCommunity{grid-template-columns:1fr 1fr}.clubCommunityVisual{grid-column:1/-1}.sectorRail{display:flex;overflow-x:auto}.sectorRail .sectorCard{min-width:210px}.worldStats{grid-template-columns:1fr 1fr;gap:18px}}
 @media(max-width:580px){.top{height:66px;padding:0 5vw}.logo span{font-size:26px}.heroText{padding:44px 5vw 35px}.hero h1{font-size:clamp(39px,10.5vw,56px)}.hero p{font-size:15px}.heroVisual{min-height:370px}.jakeQuote{font-size:13px;right:5vw;top:28px;max-width:160px}.worldBand{padding:42px 5vw}.worldStats div{padding:0 10px}.threeSteps{padding:10px 5vw}.clubCommunity{grid-template-columns:1fr}.clubCommunityVisual{grid-column:auto}.clubCommunityText{padding:35px 5vw}.clubCommunityPerks{margin:0 5vw 30px;align-self:stretch}}
+
+
+/* Photographic sector rail; imagery served by Unsplash CDN with gradient fallbacks */
+#homeSectors .featuredSector{position:relative;overflow:hidden;padding-bottom:17px}
+#homeSectors .featuredSector .sectorVisual{background-size:cover!important;background-position:center!important;filter:saturate(.78) contrast(1.07);transition:transform .4s ease}
+#homeSectors .featuredSector:hover .sectorVisual{transform:scale(1.025)}
+#homeSectors .featuredSector:nth-child(1) .sectorVisual{background-image:linear-gradient(0deg,rgba(0,0,0,.16),transparent),url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=650&q=82')!important}
+#homeSectors .featuredSector:nth-child(2) .sectorVisual{background-image:linear-gradient(0deg,rgba(0,0,0,.13),transparent),url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=650&q=82')!important}
+#homeSectors .featuredSector:nth-child(3) .sectorVisual{background-image:linear-gradient(0deg,rgba(0,0,0,.15),transparent),url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=650&q=82')!important}
+#homeSectors .featuredSector:nth-child(4) .sectorVisual{background-image:linear-gradient(0deg,rgba(0,0,0,.16),transparent),url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=650&q=82')!important}
+#homeSectors .featuredSector:nth-child(5) .sectorVisual{background-image:linear-gradient(0deg,rgba(0,0,0,.15),transparent),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=650&q=82')!important}
+#homeSectors .featuredSector b{padding-right:30px}
+.sectorArrow{position:absolute;right:12px;bottom:12px;border:1px solid #a7a6a1;border-radius:50%;width:28px;height:28px;display:grid;place-items:center;font-size:18px}
+#home .profileBand{display:none}
+#home .worldBand{background-image:linear-gradient(90deg,#050b10 0%,rgba(5,11,16,.94) 29%,rgba(5,11,16,.3) 68%),url('https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=1800&q=85');background-size:cover;background-position:center 56%}
+#home .worldBand:after{display:none}
+#home .clubCommunityVisual{background-image:linear-gradient(90deg,transparent,rgba(0,0,0,.4)),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&q=85')}
+@media(min-width:951px){#home .universe{position:relative;padding-right:12vw}#home .universe>.textLink{position:absolute;right:2vw;top:50%;transform:translateY(-50%);max-width:110px;font-size:14px;text-align:left}#home .worldBand{grid-template-columns:1fr 1.4fr}#home .worldStats{align-self:end}}
+@media(max-width:950px){#home .universe{padding-right:2vw}#home .universe>.textLink{position:static;transform:none}#home .worldBand{background-position:65% center}}
